@@ -3,6 +3,9 @@ require 'sequel'
 require 'fileutils'
 require 'yaml'
 
+# To migrate from Textpattern with images, this command can be used: 
+# ruby -rubygems -e 'require "jekyll/migrators/textpattern"; Jekyll::TextPattern.process("database_name", "username", "password", "hostname", "textpattern_base_directory")'
+
 # NOTE: This converter requires Sequel and the MySQL gems.
 # The MySQL gem can be difficult to install on OS X. Once you have MySQL
 # installed, running the following commands should work:
